@@ -1,0 +1,16 @@
+dias = int(input('Dias de viagem: '))
+
+def encontra_hotel(dias):
+    hot1 = 2
+    hot2 = 2
+    hot3 = 1
+
+    if hot3 <= hot2 and hot3 <= hot1:
+        return 'Hotel 3'
+    elif hot2 <= hot1:
+        return 'Hotel 2'
+    else:
+        return 'Hotel 1'
+
+encontra_hotel(dias)
+print(encontra_hotel(dias))
